@@ -1,10 +1,7 @@
-<!-- Declare the contents of this Android application.  The namespace
-     attribute brings in the Android platform namespace, and the package
-     supplies a unique name for the application.  When writing your
-     own application, the package name must be changed from "com.example.*"
-     to come from a domain that you own or have control over. -->
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.android.securecontainer">
+
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
@@ -12,28 +9,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
 
-    <application android:label="@string/home_title"
-                 android:icon="@drawable/ic_launcher_home">
-
-        <activity android:name="Home"
-                  android:theme="@style/AppTheme"
+    <application android:label="@string/app_name">
+        <activity android:name="SecureContainerMainActivity"
+                  android:label="@string/activity_name"
                   android:launchMode="singleInstance"
                   android:stateNotNeeded="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.HOME"/>
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="Wallpaper"
-                  android:label="Wallpaper"
-                  android:icon="@drawable/bg_android_icon">
-            <intent-filter>
-                <action android:name="android.intent.action.SET_WALLPAPER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
     </application>
 </manifest>

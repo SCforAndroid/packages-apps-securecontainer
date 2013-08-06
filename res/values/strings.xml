@@ -1,13 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Home -->
-    <string name="home_title">Home Sample</string>
-    <string name="show_all_apps">All</string>
+    <string name="app_name">SecureContainer</string>
+    <string name="activity_name">SecureContainer</string>
 
-    <!-- Home Menus -->
-    <string name="menu_wallpaper">Wallpaper</string>
-    <string name="menu_search">Search</string>
-    <string name="menu_settings">Settings</string>
-
-    <!-- Wallpaper -->
-    <string name="wallpaper_instructions">Tap picture to set portrait wallpaper</string>
+    <string name="app_launch_failed">Failed to launch application</string>
 </resources>
+
