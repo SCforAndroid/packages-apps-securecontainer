@@ -22,7 +22,7 @@ public class SecureContainerMainActivity extends Activity {
 	private static final String TAG = "SecureContainer";
 	private static final String SEINFO_PLATFORM = "platform";
 	private static final String SEINFO_SYSTEM = "system";
-	private static final String SEINFO_TRUSTED = "trusted";
+	private static final String SEINFO_CONTAINER = "container";
 	private static final String SEINFO_UNTRUSTED = "untrusted";
 
 	@Override
@@ -42,7 +42,7 @@ public class SecureContainerMainActivity extends Activity {
 							+ pm.getLaunchIntentForPackage(packageInfo.packageName));
 			Log.d(TAG, "seinfo :" + packageInfo.seinfo);
 
-			if (packageInfo.seinfo.equals(SEINFO_TRUSTED) &&
+			if (packageInfo.seinfo.equals(SEINFO_CONTAINER) &&
 				// NOTE using this for determination wether the package contains
 				// a launchable component is rather ugly and slow but works for our
 				// purpose
