@@ -4,5 +4,14 @@
     <string name="activity_name">SecureContainer</string>
 
     <string name="app_launch_failed">Failed to launch application</string>
+
+    <string-array name="domain_types">
+        <item>container</item>
+        <item>default</item>
+        <item>platform</item>
+        <item>media</item>
+        <item>shared</item>
+        <item>release</item>
+    </string-array>
 </resources>
 
